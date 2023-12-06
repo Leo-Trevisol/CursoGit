@@ -24,7 +24,7 @@ git status
 
 Aula 4: Desfazendo mudanças-
 
-git rm --cached *arquivo*
+git rm --cached *arquivo* : remover da área de preparação
 git rm --cached -r .
 
 
@@ -72,6 +72,9 @@ git checkout main/master : volta normalmente pra branch principal
 
 Aula 11: Desfazendo mudanças 
 
-git checkout *arquivo* : 
+git checkout *arquivo* : reverte mudanças de arquivos rastreados/mofificados para a ultima versão que o git conhece 
+git clean -f : remove arquivos não rastreados
+git restore --staged *arquivo* : reverte mudanças de arquivos ratreados/preparados se já existe um commit feito
+git rm --cached *arquivo* : reverte mudanças de arquivos ratreados/preparados se já tiver ou não um commit feito
 
 
