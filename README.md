@@ -1,7 +1,7 @@
 # CursoGit
 Aprendendo a usar Git: Passo a passo simples e direto a respeito das funcionalidades do Git com exemplos fáceis e eficientes!
 
-<h1> Aula 1: Identificação- <h1/>
+<h1> Aula 1: Identificação- </h1>
 
 git config --global user.name ""
 git config --global user.email ""
