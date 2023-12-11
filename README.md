@@ -16,9 +16,9 @@ git init
 
 <h3>Aula 3: Adicionando/rastreando mudanças-</h3>
 
-git add .
-git add --all
-git add -A
+git add . <br>
+git add --all<br>
+git add -A<br>
 git status
 
 
