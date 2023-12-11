@@ -78,20 +78,20 @@ git restore --staged *arquivo* : reverte mudanças de arquivos ratreados/prepara
 git rm --cached *arquivo* : reverte mudanças de arquivos ratreados/preparados se já tiver ou não um commit feito
 
 
-Aula 12: .gitignore-
+<h3>Aula 12: .gitignore-</h3>
 
-git update-index --skip-worktree *arquivo* : faz com que arquivos que já foram commitados serem ignorados
+git update-index --skip-worktree *arquivo* : faz com que arquivos que já foram commitados serem ignorados <br>
 git update-index --no-skip-worktree *arquivo* : desfaz a ultima alteração
 
 
-Aula 13: Clonando repositório-
+<h3>Aula 13: Clonando repositório-</h3>
 
 git clone *caminho do repositório*
 
 
-Aula 14: Github - Endereço de repositório - 
+<h3>Aula 14: Github - Endereço de repositório - </h3>
 
-git remote -v : mostra o repositório remoto associado
-git remote add origin *caminho do repositório* : associar repositório local com remoto
+git remote -v : mostra o repositório remoto associado <br>
+git remote add origin *caminho do repositório* : associar repositório local com remoto <br>
 git remote set-url origin *caminho do repositório* : muda endereço do repositório
 
