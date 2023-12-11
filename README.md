@@ -24,7 +24,7 @@ git status
 
 <h3>Aula 4: Desfazendo mudanças-</h3>
 
-git rm --cached *arquivo* : remover da área de preparação
+git rm --cached *arquivo* : <b>remover da área de preparação</b>
 git rm --cached -r .
 
 
