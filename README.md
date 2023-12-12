@@ -47,7 +47,8 @@ git log -1 : mostra a quantidade de commits que deseja mostrar <br>
 git log --oneline -1 <br>
 git log -p : mostra as mudanças de cada commit <br>
 git log --stat : mostra os arquivos que foram modificados de cada commit <br>
-git log --shortstat : mostra resumidamente os arquivos modificados
+git log --shortstat : mostra resumidamente os arquivos modificados <br>
+git log *nome da branch* --oneline : mostra histórico de uma branch
 
 
 <h3>Aula 8: Alterando um commit- </h3>
@@ -111,5 +112,30 @@ eval $(ssh-agent) <br>
 ssh-add ~/.ssh/*chave* : referenciar/adicionar chave
 
 
+<h3>Aula 17: Criando branch local-</h3>
+
+git branch / git branch --list <br>
+git branch *nome da branch* <br>
+git checkout *nome da branch* <br>
+git checkout -b *nome da branch* : criar e já mudar pra branch <br>
+git switch - <br>
+git switch -c *nome da branch* : criar e já mudar pra branch <br>
+git checkout -f *nome da branch* : muda de branch e descarta alterações não rastreadas
 
 
+<h3>Aula 18: Detached head-</h3>
+
+git checkout *hash do commit* : navegar e fazer mudanças em um commit
+
+
+<h3>Aula 19: Enviando/removendo branch local/remota-</h3>
+
+git push --set-upstream origin *nome da branch* : enviar para o repositorio remoto <br>
+git push -u origin *nome da branch* : enviar para o repositorio remoto <br>
+git branch -d *nome da branch* : remover branch local <br>
+git push --delete origin *nome da branch* : remover branch remota
+
+<h3>Aula 20: Renomeando branch-</h3>
+
+git branch -m *novo nome* : renomear branch checkada no momento <br>
+git branch -m *nome da branch* *nome da nova branch* : renomear branch não checkada 
