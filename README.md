@@ -95,3 +95,21 @@ git remote -v : mostra o repositório remoto associado <br>
 git remote add origin *caminho do repositório* : associar repositório local com remoto <br>
 git remote set-url origin *caminho do repositório* : muda endereço do repositório
 
+
+<h3>Aula 15: Salvando e baixando mudanças no servidor-</h3>
+
+git push <br>
+git pull <br>
+
+
+<h3>Aula 16: Gerar chave ssh-</h3>
+
+ssh-keygen <br>
+cd ~/.ssh/ <br>
+start . <br>
+eval $(ssh-agent) <br>
+ssh-add ~/.ssh/*chave* : referenciar/adicionar chave
+
+
+
+
