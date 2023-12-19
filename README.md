@@ -139,3 +139,35 @@ git push --delete origin *nome da branch* : remover branch remota
 
 git branch -m *novo nome* : renomear branch checkada no momento <br>
 git branch -m *nome da branch* *nome da nova branch* : renomear branch não checkada 
+
+
+<h3>Aula 21: Criando merge-</h3>
+
+git merge *nome da branch* : mescla a branch na branch checkada <br>
+git brach --no-merged : mostra as branchs não mescladas com a branch checkada <br>
+git branch --merged : mostra as branchs mescladas com a branch checkada
+
+
+<h3>Aula 22: Resolvendo conflitos de merges-</h3>
+
+git merge --abort : cancelar um merge
+
+
+<h3>Aula 23: Criando tags-</h3>
+
+git tag *nome da tag* : cria tag no exato ponto checkado <br>
+git tag -a -m "mensagem" *nome da tag* : cria tag com descrição e marca quem fez <br>
+git show *nome da tag* : mostra as informações da tag <br>
+git tag / git tag -l / git tag --list <br>  
+git tag -n : mostra a descrição das tags <br>
+git tag *nome da tag* *hash do commit* : cria tag no commit especifico <br>
+git tag -a -m "mensagem" *nome da tag* *hash do commit* <br>  
+git push origin *nome da tag* : envia tag citada para o servidor <br>
+git push --tags : envia todas as tags para o servidor <br>
+git checkout *nome da tag* : navega para a tag <br>
+git diff *nome da tag* *nome da tag* : mostra as diferenças entre duas tags <br>
+git tag -d *nome da tag* : remove tag local <br>
+git push --delete origin *nome da tag* : remove tag no servidor
+
+
+
