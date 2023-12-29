@@ -118,7 +118,7 @@ git branch / git branch --list <br>
 git branch *nome da branch* <br>
 git checkout *nome da branch* <br>
 git checkout -b *nome da branch* : criar e já mudar pra branch <br>
-git switch - <br>
+git switch - muda pra ultima branch checkada <br>
 git switch -c *nome da branch* : criar e já mudar pra branch <br>
 git checkout -f *nome da branch* : muda de branch e descarta alterações não rastreadas
 
@@ -170,4 +170,44 @@ git tag -d *nome da tag* : remove tag local <br>
 git push --delete origin *nome da tag* : remove tag no servidor
 
 
+<h3>Aula 24: Criando stash-</h3>
 
+git stash : salva as ultimas mudanças de arquivos rastreados e limpa a branch <br>
+git stash list <br>
+git stash apply : aplica as mudanças do primeiro stash da lista de stashs <br>
+git stash apply stash@{*numero do stash*} <br>
+git stash pop : aplica e exclui mudanças do primeiro stash da lista de stashs <br>
+git stash pop stash@{*numero do stash*} <br>
+git stash drop : exclui o primeiro stash da lista de stashs <br>
+git stash drop stash@{*numero do stash*} <br>
+git stash branch *nome da branch* : cria branch a partir do primeiro stash da lista da stashs <br>
+git stash branch *nome da branch* stash@{*numero do stash*}
+
+
+<h3>Aula 25: Revertendo commits-</h3>
+
+git revert HEAD : adiciona um novo commit que desfaz as alterações introduzidas pelo commit especificado <br>
+git revert *hash do commmit* <br>
+git revert HEAD --no-edit : Isso criará automaticamente um novo commit de reversão sem solicitar que você insira uma mensagem de commit
+
+
+<h3>Aula 26: Desfazendo commits-</h3>
+
+git reset --hard HEAD : desfaz todas as alterações e assume a HEAD <br>
+git reset --hard HEAD~*numero de commits* : desfaz todas as alterações e assume o número do commit informado (informar quantos commits devem voltar) <br>
+git commit -a -m "mensagem" : adiciona arquivos na area de preparação e já commita <br>
+git reset --mixed HEAD : mantém as alterações na área de modificadas e assume a HEAD <br>
+
+
+<h3> Aula 27: Forçando envio de mudanças-</h3>
+
+git push --force : força mudança no repositório remoto pra ele ficar igual ao local <br>
+git push --force-with-lease : força mudança no repositório remoto pra ele ficar igual ao local caso mudanças no remoto não sejam perdidas
+
+
+<h3>Aula 28: Rebase-</h3>
+
+git rebase *nome da branch* : reorganizar ou rebase commits locais no topo dos commits mais recentes do repositório remoto, em vez de fazer uma fusão padrão. O objetivo é manter um histórico linear e mais limpo <br>
+git rebase --abort : cancela o rebase caso de algum conflito <br>
+git rebase --continue : continua o rebase após tratar os conflitos <br> 
+git pull --rebase : busca as alterações do repositório remoto e reorganiza seus commits locais no topo dessas alterações, em vez de criar um novo commit de mesclagem 
