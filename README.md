@@ -249,4 +249,16 @@ git fetch *branch remota* : buscar os commits mais recentes de um repositório r
 git merge origin/*branch* / git rebase origin/*branch*: mesclar as mudanças no branch local após um fetch
 
 
+<h3> Aula 33: Configurando alias- </h3>
+
+git config --global alias.*abreviação* *comando* : exemplo- git config --global alias.s status <br> 
+git config --global --unset alias.*abreviação* : remover alias
+
+
+<h3> Aula 32: | grep </h3>
+
+*comando de listagem* | grep *palavra/frase de busca* : exemplo- git branch | grep teste, vai fazer a busca filtrada
+
+
+
 
