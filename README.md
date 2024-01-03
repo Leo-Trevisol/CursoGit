@@ -211,3 +211,13 @@ git rebase *nome da branch* : reorganizar ou rebase commits locais no topo dos c
 git rebase --abort : cancela o rebase caso de algum conflito <br>
 git rebase --continue : continua o rebase após tratar os conflitos <br> 
 git pull --rebase : busca as alterações do repositório remoto e reorganiza seus commits locais no topo dessas alterações, em vez de criar um novo commit de mesclagem 
+
+
+<h3>Aula 29: Rebase squash-</h3>
+
+git rebase -i/ git rebase --interactive : pega os ultimos commits não mandados para o servidor e abre o editor, que vai dar a opção de dar um squash, que seria juntar os commits em 1 só
+
+
+<h4> Aula 30: crerry-pick- </h3>
+
+git cherry-pick *hash do commit da outra branch* : traz o commit de uma branch para outra
