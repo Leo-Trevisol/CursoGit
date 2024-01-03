@@ -218,6 +218,28 @@ git pull --rebase : busca as alterações do repositório remoto e reorganiza se
 git rebase -i/ git rebase --interactive : pega os ultimos commits não mandados para o servidor e abre o editor, que vai dar a opção de dar um squash, que seria juntar os commits em 1 só
 
 
-<h4> Aula 30: crerry-pick- </h3>
+<h3> Aula 30: crerry-pick- </h3>
 
 git cherry-pick *hash do commit da outra branch* : traz o commit de uma branch para outra
+
+
+<h3> Aula 31: Bisect- </h3>
+
+git bisect start : inicia uma verificação que ajuda a encontrar o commit específico que introduziu um bug ou problema no repositório <br> 
+git bisect bad *hash do commit* : indicar o commit onde o bug está presente. Isso é geralmente o commit mais recente onde você sabe que o código está com problemas <br> 
+git bisect bad *commit-hash* : indicar o commit onde o código está livre do bug <br> 
+Revisar Commits Automaticamente:
+
+<b>O Git agora irá automaticamente selecionar um commit no meio do intervalo entre o commit bom e o commit ruim.
+Você revisa esse commit para determinar se o bug está presente ou não.
+Com base na revisão, você marca o commit como "bom" ou "ruim" usando os comandos git bisect good ou git bisect bad.
+Repetir até Encontrar o Commit Problemático:
+
+O Git continuará dividindo o intervalo pela metade até encontrar o commit que introduziu o bug.
+Finalizar o Processo de Bissecção:
+
+Uma vez que o Git encontre o commit problemático, você pode finalizar o processo de bissecção.<b> <br> 
+
+git bisect reset
+
+
