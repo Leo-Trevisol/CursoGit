@@ -243,3 +243,10 @@ Uma vez que o Git encontre o commit problemático, você pode finalizar o proces
 git bisect reset
 
 
+<h3> Aula 32: Fetch- </h3>
+
+git fetch *branch remota* : buscar os commits mais recentes de um repositório remoto, mas não mescla automaticamente as mudanças no branch de trabalho local <br> 
+git merge origin/*branch* / git rebase origin/*branch*: mesclar as mudanças no branch local após um fetch
+
+
+
